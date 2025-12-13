@@ -1,1 +1,1 @@
-/usr/bin/clang++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/pnl_calculator.dir/src/main.cpp.o -o pnl_calculator
+/usr/bin/clang++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/pnl_calculator.dir/src/main.cpp.o CMakeFiles/pnl_calculator.dir/src/trade.cpp.o CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.o CMakeFiles/pnl_calculator.dir/src/position.cpp.o CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.o -o pnl_calculator

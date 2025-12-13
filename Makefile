@@ -129,6 +129,30 @@ pnl_calculator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/build
 .PHONY : pnl_calculator/fast
 
+src/csv_parser.o: src/csv_parser.cpp.o
+.PHONY : src/csv_parser.o
+
+# target to build an object file
+src/csv_parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.o
+.PHONY : src/csv_parser.cpp.o
+
+src/csv_parser.i: src/csv_parser.cpp.i
+.PHONY : src/csv_parser.i
+
+# target to preprocess a source file
+src/csv_parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.i
+.PHONY : src/csv_parser.cpp.i
+
+src/csv_parser.s: src/csv_parser.cpp.s
+.PHONY : src/csv_parser.s
+
+# target to generate assembly for a file
+src/csv_parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.s
+.PHONY : src/csv_parser.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -153,6 +177,78 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/pnl_calculator.o: src/pnl_calculator.cpp.o
+.PHONY : src/pnl_calculator.o
+
+# target to build an object file
+src/pnl_calculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.o
+.PHONY : src/pnl_calculator.cpp.o
+
+src/pnl_calculator.i: src/pnl_calculator.cpp.i
+.PHONY : src/pnl_calculator.i
+
+# target to preprocess a source file
+src/pnl_calculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.i
+.PHONY : src/pnl_calculator.cpp.i
+
+src/pnl_calculator.s: src/pnl_calculator.cpp.s
+.PHONY : src/pnl_calculator.s
+
+# target to generate assembly for a file
+src/pnl_calculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.s
+.PHONY : src/pnl_calculator.cpp.s
+
+src/position.o: src/position.cpp.o
+.PHONY : src/position.o
+
+# target to build an object file
+src/position.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/src/position.cpp.o
+.PHONY : src/position.cpp.o
+
+src/position.i: src/position.cpp.i
+.PHONY : src/position.i
+
+# target to preprocess a source file
+src/position.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/src/position.cpp.i
+.PHONY : src/position.cpp.i
+
+src/position.s: src/position.cpp.s
+.PHONY : src/position.s
+
+# target to generate assembly for a file
+src/position.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/src/position.cpp.s
+.PHONY : src/position.cpp.s
+
+src/trade.o: src/trade.cpp.o
+.PHONY : src/trade.o
+
+# target to build an object file
+src/trade.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/src/trade.cpp.o
+.PHONY : src/trade.cpp.o
+
+src/trade.i: src/trade.cpp.i
+.PHONY : src/trade.i
+
+# target to preprocess a source file
+src/trade.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/src/trade.cpp.i
+.PHONY : src/trade.cpp.i
+
+src/trade.s: src/trade.cpp.s
+.PHONY : src/trade.s
+
+# target to generate assembly for a file
+src/trade.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pnl_calculator.dir/build.make CMakeFiles/pnl_calculator.dir/src/trade.cpp.s
+.PHONY : src/trade.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pnl_calculator"
+	@echo "... src/csv_parser.o"
+	@echo "... src/csv_parser.i"
+	@echo "... src/csv_parser.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/pnl_calculator.o"
+	@echo "... src/pnl_calculator.i"
+	@echo "... src/pnl_calculator.s"
+	@echo "... src/position.o"
+	@echo "... src/position.i"
+	@echo "... src/position.s"
+	@echo "... src/trade.o"
+	@echo "... src/trade.i"
+	@echo "... src/trade.s"
 .PHONY : help
 
 

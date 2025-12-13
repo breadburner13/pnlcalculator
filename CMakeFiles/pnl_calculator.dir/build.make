@@ -86,17 +86,81 @@ CMakeFiles/pnl_calculator.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pnl_calculator.dir/src/main.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/junk/pnl-calculator/src/main.cpp -o CMakeFiles/pnl_calculator.dir/src/main.cpp.s
 
+CMakeFiles/pnl_calculator.dir/src/trade.cpp.o: CMakeFiles/pnl_calculator.dir/flags.make
+CMakeFiles/pnl_calculator.dir/src/trade.cpp.o: src/trade.cpp
+CMakeFiles/pnl_calculator.dir/src/trade.cpp.o: CMakeFiles/pnl_calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/junk/pnl-calculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pnl_calculator.dir/src/trade.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pnl_calculator.dir/src/trade.cpp.o -MF CMakeFiles/pnl_calculator.dir/src/trade.cpp.o.d -o CMakeFiles/pnl_calculator.dir/src/trade.cpp.o -c /Users/junk/pnl-calculator/src/trade.cpp
+
+CMakeFiles/pnl_calculator.dir/src/trade.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pnl_calculator.dir/src/trade.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/junk/pnl-calculator/src/trade.cpp > CMakeFiles/pnl_calculator.dir/src/trade.cpp.i
+
+CMakeFiles/pnl_calculator.dir/src/trade.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pnl_calculator.dir/src/trade.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/junk/pnl-calculator/src/trade.cpp -o CMakeFiles/pnl_calculator.dir/src/trade.cpp.s
+
+CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.o: CMakeFiles/pnl_calculator.dir/flags.make
+CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.o: src/csv_parser.cpp
+CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.o: CMakeFiles/pnl_calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/junk/pnl-calculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.o -MF CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.o.d -o CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.o -c /Users/junk/pnl-calculator/src/csv_parser.cpp
+
+CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/junk/pnl-calculator/src/csv_parser.cpp > CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.i
+
+CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/junk/pnl-calculator/src/csv_parser.cpp -o CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.s
+
+CMakeFiles/pnl_calculator.dir/src/position.cpp.o: CMakeFiles/pnl_calculator.dir/flags.make
+CMakeFiles/pnl_calculator.dir/src/position.cpp.o: src/position.cpp
+CMakeFiles/pnl_calculator.dir/src/position.cpp.o: CMakeFiles/pnl_calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/junk/pnl-calculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pnl_calculator.dir/src/position.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pnl_calculator.dir/src/position.cpp.o -MF CMakeFiles/pnl_calculator.dir/src/position.cpp.o.d -o CMakeFiles/pnl_calculator.dir/src/position.cpp.o -c /Users/junk/pnl-calculator/src/position.cpp
+
+CMakeFiles/pnl_calculator.dir/src/position.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pnl_calculator.dir/src/position.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/junk/pnl-calculator/src/position.cpp > CMakeFiles/pnl_calculator.dir/src/position.cpp.i
+
+CMakeFiles/pnl_calculator.dir/src/position.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pnl_calculator.dir/src/position.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/junk/pnl-calculator/src/position.cpp -o CMakeFiles/pnl_calculator.dir/src/position.cpp.s
+
+CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.o: CMakeFiles/pnl_calculator.dir/flags.make
+CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.o: src/pnl_calculator.cpp
+CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.o: CMakeFiles/pnl_calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/junk/pnl-calculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.o -MF CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.o.d -o CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.o -c /Users/junk/pnl-calculator/src/pnl_calculator.cpp
+
+CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/junk/pnl-calculator/src/pnl_calculator.cpp > CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.i
+
+CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/junk/pnl-calculator/src/pnl_calculator.cpp -o CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.s
+
 # Object files for target pnl_calculator
 pnl_calculator_OBJECTS = \
-"CMakeFiles/pnl_calculator.dir/src/main.cpp.o"
+"CMakeFiles/pnl_calculator.dir/src/main.cpp.o" \
+"CMakeFiles/pnl_calculator.dir/src/trade.cpp.o" \
+"CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.o" \
+"CMakeFiles/pnl_calculator.dir/src/position.cpp.o" \
+"CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.o"
 
 # External object files for target pnl_calculator
 pnl_calculator_EXTERNAL_OBJECTS =
 
 pnl_calculator: CMakeFiles/pnl_calculator.dir/src/main.cpp.o
+pnl_calculator: CMakeFiles/pnl_calculator.dir/src/trade.cpp.o
+pnl_calculator: CMakeFiles/pnl_calculator.dir/src/csv_parser.cpp.o
+pnl_calculator: CMakeFiles/pnl_calculator.dir/src/position.cpp.o
+pnl_calculator: CMakeFiles/pnl_calculator.dir/src/pnl_calculator.cpp.o
 pnl_calculator: CMakeFiles/pnl_calculator.dir/build.make
 pnl_calculator: CMakeFiles/pnl_calculator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/junk/pnl-calculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pnl_calculator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/junk/pnl-calculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable pnl_calculator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pnl_calculator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

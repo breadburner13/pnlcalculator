@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/Users/junk/pnl-calculator/src
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

@@ -1,28 +1,72 @@
 #include "position.h"
+#include <stdexcept>
 
-Position::Position(const std::string& symbol) :symbol_(symbol) {}
+Position::Position(const std::string& symbol) : symbol_(symbol) {}
 
-void Position::addTrade(const Trade& trade) {
+double Position::processTrade(const Trade& trade, bool useFIFO) {
     if (trade.symbol != symbol_) {
-        throw std::runtime_error("Trade symbol doesn't match position symbol");
+        throw std::runtime_error("Trade symbol doesn't match position");
     }
+    
+    return useFIFO ? processFIFO(trade) : processLIFO(trade);
+}
 
-    trades_.push_back(trade);
+double Position::processFIFO(const Trade& trade) {
+    double pnl = 0.0;
+    int remaining = trade.quantity;
+    
     if (trade.action == TradeAction::BUY) {
+        fifoQueue_.push({trade.quantity, trade.price});
         netPosition_ += trade.quantity;
-    } else {
-        netPosition_ -= trade.quantity;
+        return 0.0;
     }
+    
+    // SELL logic
+    while (remaining > 0 && !fifoQueue_.empty()) {
+        PositionLot& front = fifoQueue_.front();
+        int matched = std::min(remaining, front.quantity);
+        
+        pnl += matched * (trade.price - front.price);
+        remaining -= matched;
+        front.quantity -= matched;
+        
+        if (front.quantity == 0) {
+            fifoQueue_.pop();
+        }
+    }
+    
+    netPosition_ -= trade.quantity;
+    return pnl;
 }
 
-int Position::getNetPos() const {
-    return netPosition_;
+double Position::processLIFO(const Trade& trade) {
+    double pnl = 0.0;
+    int remaining = trade.quantity;
+    
+    if (trade.action == TradeAction::BUY) {
+        lifoStack_.push({trade.quantity, trade.price});
+        netPosition_ += trade.quantity;
+        return 0.0;
+    }
+    
+    // SELL logic
+    while (remaining > 0 && !lifoStack_.empty()) {
+        PositionLot& top = lifoStack_.top();
+        int matched = std::min(remaining, top.quantity);
+        
+        pnl += matched * (trade.price - top.price);
+        remaining -= matched;
+        top.quantity -= matched;
+        
+        if (top.quantity == 0) {
+            lifoStack_.pop();
+        }
+    }
+    
+    netPosition_ -= trade.quantity;
+    return pnl;
 }
 
-std::string Position::getSymbol() const {
-    return symbol_;
-}
-
-const std::vector<Trade>& Position::getTrades() const {
-    return trades_;
+bool Position::isFlat() const {
+    return netPosition_ == 0;
 }
